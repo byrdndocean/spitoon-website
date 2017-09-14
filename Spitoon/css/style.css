@@ -1,0 +1,414 @@
+body {
+  font-family: Comic Sans MS, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Global */
+.container {
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul {
+  margin:0;
+  padding: 0;
+}
+
+.button {
+  height:38px;
+  /* background: #dd0404; */
+  border:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  animation: Button 10s ease infinite;
+  cursor: pointer;
+}
+
+
+@-webkit-keyframes Button{
+	0%{background-color: #fff;}
+	25%{background-color: #dd0404;}
+	50%{background-color: #07eff7;}
+	75%{background-color: #F9F904;}
+}
+
+@-moz-keyframes Button{
+	0%{background-color: #fff;}
+	25%{background-color: #dd0404;}
+	50%{background-color: #07eff7;}
+	75%{background-color: #F9F904;}
+}
+
+@-o-keyframes Button{
+	0%{background-color: #fff;}
+	25%{background-color: #dd0404;}
+	50%{background-color: #07eff7;}
+	75%{background-color: #F9F904;}
+}
+
+@keyframes Button{
+	0%{background-color: #fff;}
+	25%{background-color: #dd0404;}
+	50%{background-color: #07eff7;}
+	75%{background-color: #F9F904;}
+}
+
+.dark {
+  padding: 15px;
+  background: #441d00;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*------------------------*/
+
+span.highlight {
+  padding-left: 40px;
+  animation: sign 3s linear infinite;
+  text-shadow: 0px 0px 10px blue,
+  0px 0px 20px blue,
+  0px 0px 30px blue,
+  0px 0px 40px blue,
+  0px 0px 50px blue,
+  0px 0px 60px blue,
+  0px 0px 70px blue;
+}
+
+
+@keyframes sign {
+  0% {opacity: 0;}
+  50% {opacity: 1.0;}
+  100% {opacity: .5;}
+  
+}
+
+header {
+  background: #35424a;
+  color:#ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #DD0303 3px solid;
+}
+
+header a {
+  color:#ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li {
+  float:left;
+  display: inline;
+  padding: 0 20px 0px 20px;
+}
+
+header #bar_name {
+  float:left;
+}
+
+header #bar_name h1 {
+  margin:0;
+}
+
+header nav {
+  float:right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color:#dd0404;
+  font-weight: bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight: bold;
+}
+
+/*headliner*/
+#headliner {
+  min-height: 400px;
+  background: url("http://i696.photobucket.com/albums/vv323/trtousen/head_image.jpg") no-repeat 50% 70%;
+  text-align: center;
+  color:#dd0404;
+}
+
+
+#headliner h1 {
+  margin-top:100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#headliner p {
+  font-size: 20px;
+}
+
+#second_nav {
+  padding:15px;
+  color:#ffffff;
+  background: #35424a;
+}
+
+#second_nav h1 {
+  float:left;
+}
+
+#second_nav form {
+  float:right;
+  margin-top: 15px;
+}
+
+#second_nav input[type="email"] {
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+/* Bins */
+#bins {
+  margin-top: 20px;
+}
+
+#bins .bin{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+
+}
+
+#bins .bin img {
+  width: 90px;
+}
+
+
+/*Sidebar*/
+aside#sidebar {
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .application input, aside#sidebar .application textarea {
+  width: 90%;
+  padding: 5px;
+}
+
+/* Main-col */
+
+article#main_col {
+  float: left;
+  width: 65%;
+}
+
+/* Services */
+ul#food li{
+  list-style: none;
+  padding: 20px;
+  border: #0118ad solid 3px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+  color:#0118ad;
+}
+
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: #2d2d2d;
+  background-color: #030530;
+  text-align: center;
+}
+
+.company_policy p {
+	font-size: 0.7em;
+	text-align: center;
+	-webkit-transition: font-size .5s ease;
+	moz-transition: font-size .5s ease;
+	o-transition: font-size .5s ease;
+	transition: font-size .5s ease;
+}
+
+.company_policy p:hover {
+	font-size: 1.2em;
+  font-weight: bold;
+  color:#fff;
+}
+
+/* 3d Rotating */
+#mainDiv{
+	width: 200px;
+	height: 200px;
+	margin: 100px auto;
+	perspective: 800px;
+	border: 5px solid #FF244B
+}
+
+.copyright {
+  background: grey;
+}
+
+#boxDiv {
+	width: 200px; 
+	animation: rotate 15s linear infinite;
+}
+
+#boxDiv div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	color: #F8BABA;
+	font: 50px;
+	text-align: center;
+}
+
+
+#back_side {
+    background-image: url(http://i696.photobucket.com/albums/vv323/trtousen/open_24_1.jpeg);
+}
+
+
+@keyframes rotate
+{
+	0% { transform: rotateY(0);}
+	100% { transform: rotateY(-360deg);}
+}
+
+/*----------------------------------------------------------*/
+/* cover up logos */
+
+.check{
+  width: 960px;
+  height: 200px;
+  padding-top: 50px;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.notranslate {
+  position: relative;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 15px solid #fff;
+  float: left;
+  margin-left: -180px;
+  color:antiquewhite;
+}
+
+.translateonYaxis{
+  position: relative;
+  z-index: 2;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  border: 15px solid #dd0404;
+  float: left;
+  background-color: darkslategray;
+  color:antiquewhite;
+  margin-left: 10px;
+  -webkit-transition: all 2s cubic-bezier(0.185,0.875,0.330,1.255);
+      -moz-transition: all 2s cubic-bezier(0.185,0.875,0.330,1.255);
+          -o-transition: all 2s cubic-bezier(0.185,0.875,0.330,1.255);
+              transition: all 2s cubic-bezier(0.185,0.875,0.330,1.255);
+}
+
+.translateonYaxis:hover {
+  -webkit-transform: translateY(230px);
+      -moz-transform: translateY(230px);
+          -o-transform: translateY(230px);
+              transform: translateY(230px);
+}
+
+@-webkit-keyframes Logoz {
+  0%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/girl_weight.jpg");background-size: 150px 150px;}
+      25%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/fist.jpeg");background-size: 150px 150px;}
+      50%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/beer_chips2.jpg");background-size: 150px 150px;}            
+          60%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/locks.jpeg");background-size: 150px 150px;}            
+          75%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/kickboxer.jpeg");background-size: 150px 150px;}            
+              85%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/dancing.jpeg");background-size: 150px 150px;}            
+              100%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/party.jpeg");background-size: 150px 150px;}            
+
+}
+
+@-moz-keyframes Logoz {
+  0%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/girl_weight.jpg");background-size: 150px 150px;}
+  25%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/fist.jpeg");background-size: 150px 150px;}
+  50%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/beer_chips2.jpg");background-size: 150px 150px;}            
+      60%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/locks.jpeg");background-size: 150px 150px;}            
+      75%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/kickboxer.jpeg");background-size: 150px 150px;}            
+          85%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/dancing.jpeg");background-size: 150px 150px;}            
+          100%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/party.jpeg");background-size: 150px 150px;}
+
+}@-o-keyframes Logoz {
+  0%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/girl_weight.jpg");background-size: 150px 150px;}
+  25%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/fist.jpeg");background-size: 150px 150px;}
+  50%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/beer_chips2.jpg");background-size: 150px 150px;}            
+      60%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/locks.jpeg");background-size: 150px 150px;}            
+      75%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/kickboxer.jpeg");background-size: 150px 150px;}            
+          85%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/dancing.jpeg");background-size: 150px 150px;}            
+          100%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/party.jpeg");background-size: 150px 150px;}          
+ 
+
+}@keyframes Logoz {
+  0%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/girl_weight.jpg");background-size: 150px 150px;}
+  25%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/fist.jpeg");background-size: 150px 150px;}
+  50%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/beer_chips2.jpg");background-size: 150px 150px;}            
+      60%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/locks.jpeg");background-size: 150px 150px;}            
+      75%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/kickboxer.jpeg");background-size: 150px 150px;}            
+          85%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/dancing.jpeg");background-size: 150px 150px;}            
+          100%{background: url("http://i696.photobucket.com/albums/vv323/trtousen/party.jpeg");background-size: 150px 150px;}
+
+}
+div .notranslate {
+-webkit-animation: Logoz 10s infinite alternate;
+  -moz-animation: Logoz 10s infinite alternate;
+      -o-animation: Logoz 10s infinite alternate;
+          animation: Logoz 10s infinite alternate;
+}
+
+/* ---------------------------------------------------- */
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #bar_name,
+  header nav,
+  header nav li,
+  #second_nav h1,
+  #second_nav form,
+  #bins .bin,
+  article#main_col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #headliner h1 {
+    margin-top: 40px;
+  }
+
+  #second_nav button, .application button{
+    display: block;
+    width: 100%;
+  }
+
+  #second_nav form input[type="email"], .application input, .application textarea{
+    width:100%;
+    margin-bottom: 5px;
+  }
+}

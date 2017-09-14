@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>The Salty Spitoon | Food</title>
+  <meta name="author" content="Dresden Foster">
+  <meta name="description" content="website for bar">
+  <meta name="keywords" content="basic,html5,css,responsive, website, bar">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="top_nav">
+        <div id="bar_name">
+          <h1><span class="highlight">The Salty Spitoon</span></h1>
+        </div>
+        <nav>
+          <ul>
+              <li class="current"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+              <li style="border-left: 1px solid #fff; border-right: 1px solid #fff"><a href="about.html"><i class="fa fa-question-circle" aria-hidden="true"></i> About</a></li>
+              <li><a href="services.html"><i class="fa fa-universal-access" aria-hidden="true"></i> Services</a></li>
+            <!--<li><a href="fun.html">Fun</a></li>-->
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <section id="second_nav">
+        <div class="container">
+          <h1>Toughen Up Every Week!</h1>
+          <form action="/action_page.php" method="post">
+            <input type="email" minlength="8" maxlength="80"
+            placeholder="username@thesaltyspitoon.com"
+            pattern=".+@thesaltyspitoon.com" required>
+            <button type="submit" class="button">Subscribe</button>
+          </form>
+        </div>
+      </section>
+
+      <section id="main">
+        <div class="container">
+          <article id="main_col">
+            <h1 class="page_title">Services</h1>
+            <ul id="food">
+              <li>
+                <h3>Locations</h3>
+                <p>Nostrud aliqua voluptate ut, leberkas veniam chuck ham hock laborum anim filet mignon. Occaecat capicola doner ad exercitation, pancetta salami ipsum ham ea venison.
+                  Landjaeger flank proident lorem qui. Fatback qui magna t-bone nostrud eu rump.</p>
+               </li>
+
+                 <li>
+                   <h3>Menu</h3>
+                   <p>Meatloaf ball tip ground round, filet mignon t-bone drumstick pork chop cow pig boudin bacon burgdoggen jerky bresaola jowl. Tail swine turkey pastrami, hamburger sirloin pig. Cow meatball pastrami pork belly drumstick.
+                     Biltong pastrami pork belly turkey tenderloin porchetta shank beef ribs ribeye kevin strip steak doner meatloaf.</p>
+                  </li>
+
+                <li>
+                  <h3>Socail Media</h3>
+                  <div id="outer_wrapper">
+                  <a href="#"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size:30px"></a></i>
+                  </div>
+                  <p>Facebook</p>
+                  <p>Bresaola frankfurter ball tip beef alcatra. Ham hock meatloaf porchetta frankfurter tri-tip, hamburger picanha tenderloin rump cupim pancetta meatball ribeye. Pig sirloin sausage, meatball chuck beef ribs andouille meatloaf strip steak jowl.
+                    Spare ribs picanha tail short ribs.</p>
+                  <br>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true" style="font-size:30px"></a></i><p>Instagram</p>
+                  <p>Beef pig swine sausage beef ribs. Leberkas pastrami shank, flank jowl frankfurter salami biltong swine shoulder short loin cow burgdoggen chicken strip steak. Tenderloin porchetta pork belly, doner venison pork bacon.</p>
+                  <br>
+                  <a href="#"><i class="fa fa-twitter-square" aria-hidden="true" style="font-size:30px"></a></i><p>Twitter</p>
+                  <p>Porchetta corned beef doner, alcatra meatball filet mignon short ribs leberkas shankle pork belly hamburger rump tail. Beef meatball brisket tri-tip, short ribs sirloin ground round.</p>
+
+                 </li>
+
+            </ul>
+          </article>
+
+          <aside id="sidebar">
+            <div class="dark">
+            <h3>Do ya Have What it Takes?</h3>
+            <form action="/action_page.php" method="post" class="application" onSubmit="return radio_verify();">
+            <div>
+            <label>Name</label><br>
+            <input type="text" placeholder="Name" required>
+          </div>
+          <div>
+            <label>Email</label><br>
+            <input type="email" placeholder="Email Address" minlength="8" maxlength="80" id="address">
+          </div>
+          <div>
+            <label>Message</label><br>
+            <textarea placeholder="Tell us a good Tale!" required></textarea>
+          </div>
+          <h3 class="gender_title">Gender</h3>
+                  
+            <div class="radios">
+                <label for="gender_1">Male</label>
+                <input type="radio"
+                 name="gender" value="male">
+                
+                 <label for="gender_2">Female</label>
+                <input type="radio"
+                 name="gender" value="female">
+                
+                 <label for="gender_3">Other</label>
+                <input type="radio"
+                 name="gender" value="other">
+                
+                 <label for="gender_4">Prefer not to say</label>
+                <input type="radio"
+                 name="gender" value="notSpecified">
+                
+              </div>
+          <button class="button" type="submit" value="Submit Form" style="box-shadow: 10px 10px 5px #888888;">Apply!</button>
+        </form>
+          </div>
+          </aside>
+        </div>
+        <div id="sidebar">
+            <img src="http://i696.photobucket.com/albums/vv323/trtousen/girl_weight.jpg" style="padding-left: 15px;padding-top: 15px;">
+          </div>
+      </section>
+
+      <footer>
+          <div class="company_policy">
+          <p class="copyright">The Salty Spitoon, Copyright &copy; 2017</p>
+  
+          <p>Tail ribeye pork, alcatra pig salami picanha beef ribs meatloaf pastrami filet mignon. Pancetta pork chop pork belly tongue shank turducken shankle flank. 
+            Leberkas short ribs shoulder biltong turducken. Burgdoggen turducken pastrami shank. 
+            Short loin fatback hamburger turkey tail, pig flank jowl spare ribs bresaola ham.</p>
+  
+          <p>Tongue pancetta jerky filet mignon tail picanha brisket. Pork belly cow flank pastrami jowl shoulder landjaeger capicola boudin short ribs tail. Alcatra meatball tri-tip, 
+            shankle pork loin chicken swine pork short loin leberkas prosciutto filet mignon ground round cupim.</p>
+  
+          <p>Brisket swine ball tip pancetta, fatback spare ribs pork shoulder filet mignon chuck ribeye porchetta turducken chicken.</p>
+          </div>
+        </footer>
+  </body>
+</html>
