@@ -1,2 +1,4 @@
 # spitoon-website
-Website with html/css/javascript
+MIT license
+Author: Dresden Foster
+Website with html/css/javascript/json/ajax/google maps api
