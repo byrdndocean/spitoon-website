@@ -30,7 +30,23 @@ ul {
   cursor: pointer;
 }
 
+/* About Me button */
+#btn {
+  background: blue;
+  color:#def90c;
+  cursor: pointer;
+}
 
+.hide-me {
+  display: none;
+  border: 1px solid blue;
+}
+
+#member-info{
+  color: #def90c;
+}
+
+/* Global */
 @-webkit-keyframes Button{
 	0%{background-color: #fff;}
 	25%{background-color: #dd0404;}
@@ -105,7 +121,7 @@ header a {
 }
 
 header li {
-  float:left;
+  /* float:left; */
   display: inline;
   padding: 0 20px 0px 20px;
 }
@@ -233,8 +249,8 @@ footer {
 	font-size: 0.7em;
 	text-align: center;
 	-webkit-transition: font-size .5s ease;
-	moz-transition: font-size .5s ease;
-	o-transition: font-size .5s ease;
+	-moz-transition: font-size .5s ease;
+	-o-transition: font-size .5s ease;
 	transition: font-size .5s ease;
 }
 
@@ -377,6 +393,14 @@ div .notranslate {
           animation: Logoz 10s infinite alternate;
 }
 
+
+/* Google Maps */
+#map{
+  height:300px;
+  width:75%;
+}
+
+
 /* ---------------------------------------------------- */
 
 /* Media Queries */
@@ -411,4 +435,3 @@ div .notranslate {
     width:100%;
     margin-bottom: 5px;
   }
-}
